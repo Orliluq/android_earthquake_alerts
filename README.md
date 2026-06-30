@@ -51,7 +51,7 @@ La simulación incluye:
 
 ---
 
-# 🏗 Arquitectura del Sistema
+# 🏗 Arquitectura del sistema
 ```mermaid
 flowchart LR
 
@@ -89,7 +89,7 @@ style ALERTA fill:#ff7979,stroke:#eb4d4b,stroke-width:2px
 ```
 ---
 
-# 🧠 Tecnologías Utilizadas
+# 🧠 Tecnologías utilizadas
 
 | Tecnología | Propósito |
 |------------|-----------|
@@ -105,7 +105,7 @@ style ALERTA fill:#ff7979,stroke:#eb4d4b,stroke-width:2px
 
 ---
 
-# 📂 Estructura del Proyecto
+# 📂 Estructura del proyecto
 
 ```text
 Android-Earthquake-Alerts-Simulator/
@@ -129,11 +129,11 @@ Android-Earthquake-Alerts-Simulator/
 
 ---
 
-# ⚙️ Flujo de la Simulación
+# ⚙️ Flujo de la simulación
 
 Este notebook simula cada una de las etapas de un sistema moderno de alerta temprana de terremotos.
 
-## 📱 1. Dispositivos Android
+## 📱 1. Dispositivos android
 
 Se genera una red de **1000 dispositivos Android** distribuidos en una región geográfica.
 
@@ -146,7 +146,7 @@ Cada teléfono cuenta con:
 
 ---
 
-## 🌊 2. Generación del Terremoto
+## 🌊 2. Generación del terremoto
 
 Se crea un terremoto sintético utilizando:
 
@@ -158,7 +158,7 @@ Se crea un terremoto sintético utilizando:
 
 ---
 
-## 📡 3. Propagación de las Ondas
+## 📡 3. Propagación de las ondas
 
 La simulación modela:
 
@@ -169,7 +169,7 @@ Cada teléfono recibe las ondas en distintos momentos según su distancia al epi
 
 ---
 
-## 🤖 4. Detección Local
+## 🤖 4. Detección local
 
 Cada dispositivo Android detecta de forma independiente la llegada de la onda P.
 
@@ -183,7 +183,7 @@ Cuando se produce una detección, el teléfono envía un reporte anónimo que co
 
 ---
 
-## 📊 5. Agrupamiento Espacial
+## 📊 5. Agrupamiento espacial
 
 El servidor recibe miles de reportes.
 
@@ -195,7 +195,7 @@ Esto reduce significativamente los falsos positivos.
 
 ---
 
-## 📍 6. Estimación del Epicentro
+## 📍 6. Estimación del epicentro
 
 Cuando existe un número suficiente de reportes, el sistema estima la ubicación del terremoto mediante:
 
@@ -220,7 +220,7 @@ Solo los eventos con alta confianza generan una alerta.
 
 ---
 
-## 🚨 8. Generación de la Alerta
+## 🚨 8. Generación de la alerta
 
 Cuando el nivel de confianza supera el umbral establecido:
 
@@ -240,13 +240,13 @@ Epicentro estimado:
 
 ---
 
-# 🖼️ Visualizaciones de la Simulación
+# 🖼️ Visualizaciones de la simulación
 
 A continuación se muestran algunas de las principales visualizaciones generadas durante la ejecución del notebook.
 
 ---
 
-## 📱 Red de 1000 teléfonos Android
+## 📱 Red de 1000 teléfonos android
 
 Representación geográfica de la red distribuida de dispositivos Android que participan como sensores sísmicos.
 
@@ -316,7 +316,7 @@ El notebook incluye una simulación completamente animada que muestra:
 
 ---
 
-# 📊 Conceptos Científicos
+# 📊 Conceptos científicos
 
 Este proyecto introduce diversos conceptos ampliamente utilizados en:
 
@@ -364,7 +364,7 @@ Confianza:
 
 ---
 
-# 🚀 Mejoras Futuras
+# 🚀 Mejoras futuras
 
 Algunas ideas para ampliar este simulador:
 
@@ -390,7 +390,7 @@ Su propósito es explicar los conceptos científicos y de ingeniería que hacen 
 
 ---
 
-# 💙 ¿Por Qué Es Importante Este Proyecto?
+# 💙 ¿Por qué es importante este proyecto?
 
 Actualmente los terremotos **no pueden predecirse**.
 
@@ -427,7 +427,7 @@ Inspirado en:
 
 ---
 
-# ⭐ ¿Te Resultó Útil Este Proyecto?
+# ⭐ ¿Te resultó útil este proyecto?
 
 Considera darle una ⭐ en GitHub.
 
@@ -435,7 +435,7 @@ Ayudará a que más personas descubran el proyecto y apoyará las iniciativas ed
 
 ---
 
-## ✨ Autor
+## ✨ Autora
 
 **Orli Dun**
 
