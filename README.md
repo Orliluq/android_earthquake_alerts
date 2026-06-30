@@ -5,7 +5,7 @@
 
 <p align="center">
 
-![Demo](earthquake.gif)
+![Demo](images/earthquake.gif)
 
 </p>
 
