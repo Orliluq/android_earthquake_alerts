@@ -52,39 +52,20 @@ La simulación incluye:
 ---
 
 # 🏗 Arquitectura del Sistema
-
-```text
-                 TERREMOTO
-                      │
-                      ▼
-               Onda P / Onda S
-                      │
-                      ▼
-        📱 Miles de Teléfonos Android
-                      │
-        Detección Local del Movimiento
-                      │
-                      ▼
-        Reportes Anónimos de Sensores
-                      │
-                      ▼
-        ┌─────────────────────────────┐
-        │ Servidor de Alerta Sísmica  │
-        │            (EEW)            │
-        ├─────────────────────────────┤
-        │ Eliminación de ruido        │
-        │ Agrupamiento espacial       │
-        │ DBSCAN                      │
-        │ Mínimos Cuadrados           │
-        │ Estimación del epicentro    │
-        │ Cálculo de confianza        │
-        │ Decisión de alerta          │
-        └─────────────────────────────┘
-                      │
-                      ▼
-        🚨 Alerta Sísmica para Android
 ```
+flowchart TD
+    A["🌎 Terremoto"] --> B["🌊 Ondas P y S"]
+    B --> C["📱 Miles de teléfonos Android"]
+    C --> D["📡 Detección local del movimiento"]
+    D --> E["📤 Reportes anónimos"]
+    E --> F["🖥️ Servidor EEW"]
 
+    F --> G["🧹 Eliminación de ruido"]
+    G --> H["📊 Agrupamiento (DBSCAN)"]
+    H --> I["📍 Estimación del epicentro"]
+    I --> J["📈 Cálculo de confianza"]
+    J --> K["🚨 Alerta de terremoto para Android"]
+```
 ---
 
 # 🧠 Tecnologías Utilizadas
