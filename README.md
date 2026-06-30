@@ -52,19 +52,40 @@ La simulación incluye:
 ---
 
 # 🏗 Arquitectura del Sistema
-```
-flowchart TD
-    A["🌎 Terremoto"] --> B["🌊 Ondas P y S"]
-    B --> C["📱 Miles de teléfonos Android"]
-    C --> D["📡 Detección local del movimiento"]
-    D --> E["📤 Reportes anónimos"]
-    E --> F["🖥️ Servidor EEW"]
+```mermaid
+flowchart LR
 
-    F --> G["🧹 Eliminación de ruido"]
-    G --> H["📊 Agrupamiento (DBSCAN)"]
-    H --> I["📍 Estimación del epicentro"]
-    I --> J["📈 Cálculo de confianza"]
-    J --> K["🚨 Alerta de terremoto para Android"]
+subgraph CLIENTES["📱 Dispositivos Android"]
+A["📱 Android 1"]
+B["📱 Android 2"]
+C["📱 Android n"]
+end
+
+subgraph SERVIDOR["🖥️ Servidor EEW"]
+D["📡 Recepción de reportes"]
+E["🧹 Filtrado de ruido"]
+F["📊 DBSCAN"]
+G["📍 Localización"]
+H["📈 Confianza"]
+end
+
+subgraph ALERTA["🚨 Sistema de Alertas"]
+I["📲 Notificación Android"]
+end
+
+A --> D
+B --> D
+C --> D
+
+D --> E
+E --> F
+F --> G
+G --> H
+H --> I
+
+style CLIENTES fill:#dff9fb,stroke:#22a6b3,stroke-width:2px
+style SERVIDOR fill:#f6e58d,stroke:#f0932b,stroke-width:2px
+style ALERTA fill:#ff7979,stroke:#eb4d4b,stroke-width:2px
 ```
 ---
 
